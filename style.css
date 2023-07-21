@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: teal;
+  min-height: 100vh;
+}
+
+/*Pendiente anothar los valores a usar*/
+root {
+  --size: 150px;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.left-title {
+  background-color: green;
+}
+
+.center-navbar {
+  background-color: brown;
+  width: 70%;
+}
+
+.right-content {
+  background-color: aqua;
+  width: 100%;
+}
+
+/*tamaño de las imagenes*/
+img {
+  width: 150px;
+}
+
+ul img {
+  width: 20px;
+}
