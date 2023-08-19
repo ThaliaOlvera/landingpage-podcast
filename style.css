@@ -134,8 +134,18 @@ ul img {
   margin-top: 4px;
 }
 
+.center-navbar-list ul li p:hover {
+  cursor: pointer;
+  color: var(--color-text-paragraph);
+}
+
 .center-navbar-list span {
   margin-right: 12px;
+}
+
+.center-navbar-list span:hover {
+  cursor: pointer;
+  color: var(--color-text-paragraph);
 }
 
 .center-navbar-list ul li img {
