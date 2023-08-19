@@ -26,6 +26,8 @@ main {
 
   width: 44px;
 
+  background-color: var(--color-secondary);
+
   writing-mode: vertical-lr;
   font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -43,11 +45,6 @@ main {
 .left-title span {
   margin: 12px;
   color: var(--color-text-paragraph);
-}
-
-.right-content {
-  background-color: aqua;
-  width: 100%;
 }
 
 /*tamaño de las imagenes*/
@@ -68,6 +65,7 @@ ul img {
   height: 100vh;
   align-items: center;
 
+  background-color: var(--color-secondary);
   border-left: 0.5px var(--color-terciary) solid;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -142,4 +140,177 @@ ul img {
 
 .center-navbar-list ul li img {
   width: 150px;
+}
+
+/* Podcast information*/
+
+.right-content {
+  width: 100%;
+  overflow: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.head-right-content {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.right-content .head-right-content img {
+  width: 100%;
+  position: relative;
+  height: 90px;
+  opacity: 0.3;
+}
+
+.right-content h2 {
+  margin-left: 12px;
+  margin-top: 0;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  margin-top: 24px;
+  border-top: #bd658e 1px solid;
+  border-bottom: #bd658e 1px solid;
+}
+
+.info-container p {
+  color: var(--color-text-paragraph);
+}
+
+.interaction-buttons {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 12px;
+}
+
+.interaction-buttons img {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-terciary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.interaction-buttons p {
+  margin: 0;
+  margin-left: 16px;
+  color: var(--color-text-paragraph);
+}
+
+.interaction-buttons a {
+  margin-left: 16px;
+  text-decoration-line: none;
+  color: var(--color-terciary);
+}
+
+.interaction-buttons:hover a {
+  font-weight: 800;
+}
+
+.interaction-buttons:hover img {
+  background-color: var(--color-primary);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  main {
+    display: block;
+  }
+  .left-title {
+    width: 100%;
+    display: flex;
+    writing-mode: horizontal-tb;
+    background-color: #bd658e;
+    color: var(--color-primary);
+  }
+
+  .center-navbar {
+    display: flex;
+    flex-direction: column;
+
+    height: 130vh;
+    align-items: center;
+
+    background-color: var(--color-secondary);
+    border-left: 0.5px var(--color-terciary) solid;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .image-container {
+    width: 200px;
+    height: 200px;
+
+    margin-top: 16px;
+
+    border-radius: 8px;
+    box-shadow: 4px 10px 37px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 10px 37px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 10px 37px -7px rgba(0, 0, 0, 0.75);
+  }
+
+  .center-navbar h1 {
+    margin: 0;
+    padding-top: 8px;
+  }
+
+  .description-text {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 8px;
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .about-text {
+    text-align: center;
+    margin: 30px;
+    padding-left: 12px;
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .about a {
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+
+    color: var(--color-terciary);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-decoration: none;
+  }
+
+  .center-navbar-list {
+    justify-content: center;
+  }
+
+  .center-navbar-list ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 0px;
+    list-style: none;
+  }
+  .center-navbar-list ul li {
+    display: block;
+  }
+
+  .center-navbar-list p {
+    opacity: 0;
+    width: 8px;
+  }
+
+  .center-navbar-list span:hover {
+    cursor: pointer;
+    background-color: #bd658e;
+    border-radius: 8px;
+  }
 }
