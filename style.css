@@ -486,7 +486,6 @@ ul img {
 
   .description-text {
     text-align: center;
-    margin: 30px;
     margin-bottom: 8px;
 
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -501,7 +500,7 @@ ul img {
   .about-text {
     text-align: center;
     width: 300px;
-    height: 100px;
+    height: 50px;
     margin: 8px;
     padding: 0;
 
@@ -510,10 +509,9 @@ ul img {
   }
 
   .about a {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
     width: 320px;
-
     color: var(--color-terciary);
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -521,6 +519,7 @@ ul img {
   }
 
   .center-navbar-list {
+    height: 0;
     justify-content: center;
   }
 
@@ -553,5 +552,9 @@ ul img {
 
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
+  }
+
+  .info-container {
+    margin-right: 12px;
   }
 }
